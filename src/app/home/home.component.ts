@@ -61,6 +61,10 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  openDashboard() {
+    this.router.navigate(['dashboard']);
+  }
+
   // tslint:disable-next-line:typedef
   statusChanged(ev: MatSelectChange, todoId: number, index: number) {
     const value = ev.value;
@@ -85,4 +89,8 @@ export class HomeComponent implements OnInit {
   }
 
 
+}
+
+function openDashboard() {
+  throw new Error('Function not implemented.');
 }
