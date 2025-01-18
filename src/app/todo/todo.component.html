@@ -14,6 +14,16 @@
           <mat-label>Description</mat-label>
           <textarea matInput name="description" [(ngModel)]="description" [value]="description"></textarea>
         </mat-form-field>
+        <mat-form-field>
+          <mat-label>Start Date</mat-label>
+          <input matInput [matDatepicker]="startTimePicker" [(ngModel)]="startTime" [value]="startTime" readonly>
+          <mat-datepicker #startTimePicker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>End Date</mat-label>
+          <input matInput [matDatepicker]="endTimePicker" [(ngModel)]="endTime" [value]="endTime" readonly>
+          <mat-datepicker #endTimePicker></mat-datepicker>
+        </mat-form-field>
       </p>
     </div>
     <div class="col-12 d-flex justify-content-end">

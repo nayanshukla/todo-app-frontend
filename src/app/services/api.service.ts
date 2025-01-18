@@ -115,7 +115,8 @@ export class ApiService {
       tap(res => {
         if (res) {
           this.toast.success('Status updated successfully', '', {
-            timeOut: 1000
+            timeOut: 1000,
+
           });
         }
       })

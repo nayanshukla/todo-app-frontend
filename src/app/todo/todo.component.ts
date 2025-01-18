@@ -9,6 +9,8 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 export class TodoComponent implements OnInit {
   title: any;
   description: any;
+  startTime: Date = new Date();
+  endTime: Date = new Date();
 
   constructor(public dialogRef: MatDialogRef<TodoComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any) {
