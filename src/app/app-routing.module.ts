@@ -4,7 +4,6 @@ import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {AuthGuard} from './guards/auth.guard';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -24,11 +23,6 @@ const routes: Routes = [
     component: RegisterComponent,
     title: 'NS Todo' 
     //canActivate: [AuthGuard]
-  },
-  {
-    path: 'dashboard',
-    component: DashboardComponent,
-    title: 'NS Todo'
   },
   {
     path: '**',

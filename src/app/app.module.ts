@@ -21,7 +21,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
@@ -31,7 +30,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     LoginComponent,
     RegisterComponent,
     TodoComponent,
-    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,15 +48,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ToastrModule.forRoot({
       closeButton: true,
       progressBar: true,
-      progressAnimation: 'increasing'
+      progressAnimation: 'increasing',
     }),
     HttpClientModule,
     MatTableModule,
-    MatNativeDateModule // Add this to support the datepicker
+    MatNativeDateModule, // Add this to support the datepicker
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
